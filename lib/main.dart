@@ -3,7 +3,18 @@ import 'package:flutter_visual_code/factory/task_factory.dart';
 import 'package:flutter_visual_code/models/task.dart';
 
 void main() {
-  runApp(ToDoList());
+  runApp(MaterialAppCustom());
+}
+
+class MaterialAppCustom extends StatelessWidget {
+   const MaterialAppCustom();
+
+   @override
+   Widget build(BuildContext context){
+    return MaterialApp(
+      home: ToDoList(),
+    );
+   }
 }
 
 class ToDoList extends StatelessWidget {
@@ -16,8 +27,7 @@ class ToDoList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           leading: const IconButton(
             icon: Icon(Icons.check),
@@ -49,7 +59,6 @@ class ToDoList extends StatelessWidget {
               )).toList()
           ),
         )
-      ),
-    );
+      );
   }
 }
