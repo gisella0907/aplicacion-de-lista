@@ -67,14 +67,12 @@ class ToDoList extends StatelessWidget {
                                 )),
                             Text(task.name()),
                             task.status()
-                                ? const Icon(
-                                    Icons.check_box,
-                                    color: Colors.pink,
-                                  ) //EEJEMPLO IF AIMPLIFICADO
+                                ? const Icon(Icons.check_box,
+                                    color:
+                                        Colors.pink) //EEJEMPLO IF AIMPLIFICADO
                                 : const Icon(
                                     Icons.check_box_outline_blank_outlined,
-                                    color: Colors.pink,
-                                  ),
+                                    color: Colors.pink),
                           ],
                         ),
                       ))
@@ -126,7 +124,10 @@ class MaterialAppCustom2 extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  const Icon(Icons.date_range),
+                                  const Icon(
+                                    Icons.date_range,
+                                    color: Colors.pink,
+                                  ),
                                   const Text("Fecha de Inicio:   "),
                                 ]),
                           ),
@@ -142,7 +143,10 @@ class MaterialAppCustom2 extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Icon(Icons.date_range),
+                                  Icon(
+                                    Icons.date_range,
+                                    color: Colors.pink,
+                                  ),
                                   Text("Fecha Fin:   "),
                                 ]),
                           ),
@@ -161,8 +165,11 @@ class MaterialAppCustom2 extends StatelessWidget {
                                   _task.status()
                                       ? const Icon(Icons
                                           .check_box) //EEJEMPLO IF AIMPLIFICADO
-                                      : const Icon(Icons
-                                          .check_box_outline_blank_outlined),
+                                      : const Icon(
+                                          Icons
+                                              .check_box_outline_blank_outlined,
+                                          color: Colors.pink,
+                                        ),
                                   Text("Estado:   "),
                                 ]),
                           )
